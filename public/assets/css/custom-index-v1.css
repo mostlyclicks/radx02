@@ -1,0 +1,72 @@
+/* custom-index-v1.css */
+
+/*.content {
+  border:5px solid yellow;
+}*/
+
+/*green:97e360 blue:60e3e0; red:ff8666; */
+
+.content.has-bg .content-bg:before {
+    content: '';
+    /*background: url(../img/content-bg-cover2.png !important);*/
+    background:none !important;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0
+}
+
+.content-bg {
+  background-size: 100%;
+
+}
+
+#home {
+  /*border:1px solid red;*/
+  height:90vh !important;
+}
+
+.home-content {
+  margin-top:-300px !important;
+}
+
+.home-content h1 {color:#262f41 !important;font-weight:100;}
+.home-content h3 {color:#eca349 !important;}
+
+.home-buckets {
+  display:block;
+  height:30vh;
+  padding:40px !important;
+}
+
+.home-buckets h2 {color:#ffffff;font-weight:100;text-align:center;text-transform: uppercase;}
+
+#home-editors {
+  background-image:url(../stock_img/v1-editors.png);
+  background-size:100%;
+  background-color:#6e7f8c;
+}
+
+#home-editors p {color:rgba(255,255,255,.8);}
+#home-editors a {color:#eca349;}
+
+
+
+#home-students {
+  background-image:url(../stock_img/v1-students.png);
+  background-size:100%;
+  background-color:#eca349;
+}
+
+#home-students p {color:rgba(255,255,255,1);}
+#home-students a {color:#0881b9;}
+
+#home-institutions {
+  background-image:url(../stock_img/v1-institutions.png);
+  background-size:100%;
+  background-color:#0881b9;
+}
+
+#home-institutions p {color:rgba(255,255,255,1);}
+#home-institutions a {color:#ffffff;}
