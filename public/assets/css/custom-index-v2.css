@@ -1,0 +1,42 @@
+/*custom-index-v2.css*/
+/*light blue:#c6ddff; 
+  light-red-stone:#ff8667;
+  dark-red-stone:#ce6f56;
+  med-blue:#6a8195;
+  dark-blue:#515d68;
+*/
+.content.has-bg .content-bg:before {
+    background:none;
+}
+
+.home-content {
+  margin-top:-300px;
+}
+
+
+
+#milestone {
+  background-color:#ce6f56;
+}
+
+#milestone .title {color:#fff;}
+
+.team-row {
+  margin-bottom:50px;
+}
+
+#quote {background-color:#515d68;}
+
+#action-box {
+  background-color:#c6ddff;
+}
+
+.btn-theme2 {color:#fff;background-color:#ce6f56;}
+.social-list .fa {color:#ce6f56;}
+
+#footer {background-color:#515d68;color:#fff;}
+#footer a {color:#ce6f56;}
+
+#client {
+  height:500px;
+}
