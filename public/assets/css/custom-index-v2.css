@@ -24,9 +24,37 @@
     background:none;
 }
 
+#home {
+  height:75vh !important;
+}
+
 .home-content {
   margin-top:-300px;
 }
+
+#courses {
+  height:25vh !important;
+  background-color:#eca349;
+  background-image:url(/assets/img/courses-block.png);
+  background-repeat:no-repeat;
+  background-position-x:90%;
+}
+#courses h2 {
+  font-weight:100;
+  color:#fff;
+  padding-top:1.2em;
+}
+
+#course .btn {
+  background-color:#262f41 !important;
+}
+
+#courses p {
+  color:#fff;
+}
+
+#about {height:90vh;}
+#about .container {border:1px solid red;position:relative;top:30%;}
 
 
 
