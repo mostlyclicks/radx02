@@ -1,10 +1,25 @@
 /*custom-index-v2.css*/
-/*light blue:#c6ddff; 
-  light-red-stone:#ff8667;
-  dark-red-stone:#ce6f56;
-  med-blue:#6a8195;
-  dark-blue:#515d68;
+
+
+/*
+  beige:#f2e5d5;
+  light-gray:#6e7f8c;
+  dark-gray:#474f56;
+  dark-blue:#262f41;
+  orange:#eca349;
+  light-blue:#0881b9;
 */
+
+.navbar-brand #logo {line-height:0px;padding:0px;margin-top:-14px;}
+.navbar {background-color:rgba(255,255,255,.4) !important;}
+.navbar-nav .btn {margin-top:19px !important;padding:2px 8px;}
+
+.navbar-small {background-color:rgba(255,255,255,1) !important;}
+.navbar-small #logo {width:80px;margin-top:-8px;}
+.navbar-small .btn {margin-top:10px !important;}
+
+
+
 .content.has-bg .content-bg:before {
     background:none;
 }
@@ -16,7 +31,7 @@
 
 
 #milestone {
-  background-color:#ce6f56;
+  background-color:#262f41;
 }
 
 #milestone .title {color:#fff;}
@@ -25,13 +40,15 @@
   margin-bottom:50px;
 }
 
-#quote {background-color:#515d68;}
+#quote {background-color:#474f56;}
+#quote .quote {color:#f2e5d5;}
+#quote .quote .text-theme2 {color:#eca349;}
 
 #action-box {
   background-color:#c6ddff;
 }
 
-.btn-theme2 {color:#fff;background-color:#ce6f56;}
+.btn-theme2 {color:#fff;background-color:#eca349;}
 .social-list .fa {color:#ce6f56;}
 
 #footer {background-color:#515d68;color:#fff;}
@@ -40,3 +57,8 @@
 #client {
   height:500px;
 }
+#client blockquote, #client h2 {
+  color:#262f41;
+}
+#client .name {color:#262f41;}
+#client span.text-theme2 {color:#262f41;}
