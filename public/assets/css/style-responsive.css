@@ -5,13 +5,28 @@ Author: Sean Ngu
 Website: http://www.seantheme.com/color-admin-v1.8/frontend/
 */
 
-@media (min-width: 1920px) {
+@media (min-width:1201px) and (max-width: 1920px) {
+    body {border:5px solid gray !important;}
+    #courses {height:250px !important;}
+    #home {
+        height:80vh;
+        
+    }
+    .home-content {margin-top:-320px;}
+
+    
     .content.has-bg .content-bg img {
-        width: 100%;
+        /*width: 100%;*/
     }
 }
 
-@media (max-width: 1200px) {
+@media (min-width:993px) and (max-width: 1200px) {
+    body {border:5px solid purple !important;}
+    #courses {height:250px !important;}
+    #home {height:80vh;}
+    .home-content {margin-top:-300px;}
+    #courses img {margin-top:10px;}
+
     .content.has-bg .content-bg img {
         max-height: 100%;
         max-width: inherit;
@@ -21,6 +36,11 @@ Website: http://www.seantheme.com/color-admin-v1.8/frontend/
     }
 }
 @media (min-width: 768px) and (max-width: 992px) {
+    body {border:5px solid blue !important;}
+    #courses {height:220px !important;}
+    #courses h2 {color:red !important;}
+    
+
     .header.navbar .navbar-nav > li > a {
         padding: 25px 10px;
     }
@@ -40,8 +60,14 @@ Website: http://www.seantheme.com/color-admin-v1.8/frontend/
     .home-content p {
         margin-bottom: 30px;
     }
+    .home-content {margin-top: -280px;}
 }
 @media (max-width: 992px) { 
+    body {border:5px solid green;}
+
+
+
+
     .about-author .author {
         padding-left: 80px;
     }
@@ -50,6 +76,11 @@ Website: http://www.seantheme.com/color-admin-v1.8/frontend/
     }
 }
 @media (max-width: 767px) {
+    body {border:5px solid red;}
+
+
+    #courses {color:red;}
+
     .header.navbar .navbar-nav > li > a {
         padding: 10px 15px;
     }

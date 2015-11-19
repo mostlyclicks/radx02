@@ -25,25 +25,31 @@
 }
 
 #home {
-  height:75vh !important;
+  height:100vh !important;
+  background-image:url(/assets/stock_img/505657425-2.jpg);
+  background-size:cover;
+  background-position-x:50%;
 }
 
 .home-content {
-  margin-top:-300px;
+  margin-top:-200px;
 }
 
 #courses {
-  height:25vh !important;
+  height:320px !important;
   background-color:#eca349;
-  background-image:url(/assets/img/courses-block.png);
+/*  background-image:url(/assets/img/courses-block.png);
   background-repeat:no-repeat;
   background-position-x:90%;
+  background-position-y:40px;*/
 }
 #courses h2 {
   font-weight:100;
   color:#fff;
   padding-top:1.2em;
 }
+
+#courses img {position:relative;bottom:-32px;}
 
 #course .btn {
   background-color:#262f41 !important;
