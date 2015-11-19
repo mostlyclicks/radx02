@@ -59,8 +59,10 @@
   color:#fff;
 }
 
-#about {height:90vh;}
-#about .container {border:1px solid red;position:relative;top:30%;}
+#about {height:90vh;background-color:#f2e5d5;}
+#about p.lead {color:#262f41 !important;}
+#about .container {position:relative;top:30%;}
+
 
 
 
@@ -96,3 +98,6 @@
 }
 #client .name {color:#262f41;}
 #client span.text-theme2 {color:#262f41;}
+
+#footer {background-color:#262f41;}
+#footer-logo {margin:0 auto;}
