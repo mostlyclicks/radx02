@@ -6,7 +6,7 @@ Website: http://www.seantheme.com/color-admin-v1.8/frontend/
 */
 
 @media (min-width:1201px) and (max-width: 1920px) {
-    body {border:5px solid gray !important;}
+    /*body {border:5px solid gray !important;}*/
     #courses {height:250px !important;}
     #home {
         height:80vh;
@@ -21,7 +21,7 @@ Website: http://www.seantheme.com/color-admin-v1.8/frontend/
 }
 
 @media (min-width:993px) and (max-width: 1200px) {
-    body {border:5px solid purple !important;}
+    /*body {border:5px solid purple !important;}*/
     #courses {height:250px !important;}
     #home {height:80vh;}
     .home-content {margin-top:-300px;}
@@ -36,7 +36,7 @@ Website: http://www.seantheme.com/color-admin-v1.8/frontend/
     }
 }
 @media (min-width: 768px) and (max-width: 992px) {
-    body {border:5px solid blue !important;}
+    /*body {border:5px solid blue !important;}*/
     #courses {height:220px !important;}
     #courses h2 {color:red !important;}
     
@@ -63,7 +63,7 @@ Website: http://www.seantheme.com/color-admin-v1.8/frontend/
     .home-content {margin-top: -280px;}
 }
 @media (max-width: 992px) { 
-    body {border:5px solid green;}
+    /*body {border:5px solid green;}*/
 
 
 
@@ -76,7 +76,7 @@ Website: http://www.seantheme.com/color-admin-v1.8/frontend/
     }
 }
 @media (max-width: 767px) {
-    body {border:5px solid red;}
+    /*body {border:5px solid red;}*/
 
 
     #courses {color:red;}
