@@ -12,7 +12,13 @@ Website: http://www.seantheme.com/color-admin-v1.8/frontend/
         height:80vh;
         
     }
-    .home-content {margin-top:-320px;}
+    .home-content {
+        margin-top:-152px;}
+    #home {
+        background-size: 120%;
+        background-position-x:80%;
+
+    }
 
     
     .content.has-bg .content-bg img {
@@ -39,7 +45,7 @@ Website: http://www.seantheme.com/color-admin-v1.8/frontend/
     /*body {border:5px solid blue !important;}*/
     #courses {height:220px !important;}
     #courses h2 {color:red !important;}
-    
+
 
     .header.navbar .navbar-nav > li > a {
         padding: 25px 10px;

@@ -26,14 +26,18 @@
 
 #home {
   height:100vh !important;
-  background-image:url(/assets/stock_img/505657425-2.jpg);
+  background-image:url(/assets/stock_img/shutterstock_71999014.png);
   background-size:cover;
   background-position-x:50%;
 }
 
 .home-content {
   margin-top:-200px;
+
 }
+
+.home-content h1 {color:#262f41 !important;opacity:.6;}
+.home-content h3 {color:#262f41 !important;opacity:.4;}
 
 #courses {
   height:320px !important;
