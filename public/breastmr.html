@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <title>radX, LLC</title>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+  <meta content="" name="description" />
+  <meta content="" name="author" />
+  
+  <!-- ================== BEGIN BASE CSS STYLE ================== -->
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+  <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+  <!-- <link href="assets/css/animate.min.css" rel="stylesheet" /> -->
+  <!-- <link href="assets/css/style.min.css" rel="stylesheet" /> -->
+    <!-- <link href="assets/css/custom-index-v2.css" rel="stylesheet" /> -->
+    <!-- <link href="assets/css/style-responsive.css" rel="stylesheet" /> -->
+  <!-- <link href="assets/css/style-responsive.min.css" rel="stylesheet" /> -->
+  <!-- <link href="assets/css/theme/default.css" id="theme" rel="stylesheet" /> -->
+  <!-- ================== END BASE CSS STYLE ================== -->
+  
+  <!-- ================== BEGIN BASE JS ================== -->
+  <script src="assets/plugins/pace/pace.min.js"></script>
+  <!-- ================== END BASE JS ================== -->
+
+  <style>
+    fieldset {
+        border-width: 1px;
+        border-color: black;
+        border-style: solid;
+        padding-left: 5px;
+        margin-bottom: 5px;
+    }
+
+    legend {
+        width: auto;
+        padding: 0px;
+        margin: 0px;
+        margin-left: 0px;
+        border: none;
+        font-size: small;
+    }
+
+    input[type=radio] {
+        margin: 0px;
+    }
+
+    textarea {
+        width: 100%;
+        margin-top: 5px;
+        font-size: small;
+    }
+
+    .form-horizontal .form-group {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .save-image .no-image {
+        border: 0px;
+        width: 100%;
+        height: 1em;
+        font-size: xx-small;
+    }
+
+    .view-ps {
+        height: 15px;
+        margin-left: 15px;
+    }
+
+    .delete-ps {
+        margin-top: 5px;
+    }
+
+    td {
+        font-size: small;
+    }
+
+    .findingtitle {
+        font-weight: bold;
+        vertical-align: top;
+        text-align: right;
+        width: 0px;
+    }
+</style>
+
+
+  
+</head>
+
+
+
+
+<body>
+
+
+
+
+
+
+<!-- <div style="max-height:inherit; overflow-y:scroll"> -->
+    <h4><strong>FINDINGS</strong></h4>
+    <div class="form-group">
+        <div class="col-md-11 pull-right">
+            <fieldset name="Parenchymal volume">
+                <legend>Parenchymal volume</legend>
+                <label class="radio-inline"><input name="per25" type="radio" value="per25">25%</label>
+                <label class="radio-inline"><input name="per25" type="radio" value="per2549">25-49%</label>
+                <label class="radio-inline"><input name="per25" type="radio" value="per75">75%</label>
+            </fieldset>
+            <fieldset name="Background Parenchymal Enhancement BPE">
+                <legend>Background Parenchymal Enhancement BPE</legend>
+                <label class="radio-inline"><input name="BPE" type="radio" value="None">None</label>
+                <label class="radio-inline"><input name="BPE" type="radio" value="Minimal">Minimal/Mild</label>
+                <label class="radio-inline"><input name="BPE" type="radio" value="Moderate">Moderate/Marked</label>
+            </fieldset>
+      </div>
+    </div>
+    <fieldset name="MainLesion1">
+        <legend><strong>LESION 1</strong></legend>
+        <div class="form-group" id="MainL1">
+            <div class="col-md-11 pull-right">
+                <fieldset name="Side">
+                    <legend>Side</legend>
+                    <label class="radio-inline"><input name="L1Side" type="radio" value="Right">Right</label>
+                    <label class="radio-inline"><input name="L1Side" type="radio" value="Left">Left</label>
+                </fieldset>
+                <fieldset name="Quadrant">
+                    <legend>Quadrant</legend>
+                    <label class="radio-inline"><input name="L1QD" type="radio" value="LOQ">LOQ</label>
+                    <label class="radio-inline"><input name="L1QD" type="radio" value="UOQ">UOQ</label>
+                    <label class="radio-inline"><input name="L1QD" type="radio" value="UIQ">UIQ</label>
+                    <label class="radio-inline"><input name="L1QD" type="radio" value="LIQ">LIQ</label>
+                    <label class="radio-inline"><input name="L1QD" type="radio" value="Axillary">Axillary</label>
+                    <label class="radio-inline"><input name="L1QD" type="radio" value="Central">Central</label>
+                </fieldset>
+                <fieldset name="Depth">
+                    <legend>Location 2</legend>
+                    <label class="radio-inline"><input name="L1Depth" type="radio" value="AntThird">Ant third</label>
+                    <label class="radio-inline"><input name="L1Depth" type="radio" value="MidThird">Mid third</label>
+                    <label class="radio-inline"><input name="L1Depth" type="radio" value="PostThird">Post third</label>
+                </fieldset>
+            </div>
+        </div>
+        <label class="radio-inline"><input name="radioImage1" class="save-image" type="radio" value="SaveAnswerImage">Save Answer Image</label>
+        <label class="radio-inline"><input name="radioImage1" class="no-image" type="radio" value="NoAnswerImage" checked>No Image</label>
+        <a name="Lesion1" class="view-ps btn btn-xs btn-link" disabled="">View Image</a>
+        <i class="fa delete-ps fa-2x fa-trash-o pull-right" style="" title="Delete Image"></i>
+
+        <div class="form-group">
+            <h5>Lesion type</h5>
+            <div class="col-md-11 pull-right">
+                <fieldset name="Focus">
+                    <legend>Focus</legend>
+                    <label class="radio-inline"><input name="focus" type="radio" value="Yes">Yes</label>
+                    <label class="radio-inline"><input name="focus" type="radio" value="No">No</label>
+                </fieldset>
+                <fieldset name="Mass">
+                    <legend>Mass</legend>
+                    <label class="radio-inline"><input name="mass" type="radio" value="Single">Single</label>
+                    <label class="radio-inline"><input name="mass" type="radio" value="Multiple">Multiple</label>
+                    <label class="radio-inline"><input name="mass" type="radio" value="Similar">Similar</label>
+                </fieldset>
+                <fieldset name="T1">
+                    <legend>T1</legend>
+                    <label class="radio-inline"><input name="T1" type="radio" value="Hypo">Hypo</label>
+                    <label class="radio-inline"><input name="T1" type="radio" value="Hyper">Hyper</label>
+                    <label class="radio-inline"><input name="T1" type="radio" value="Iso">Iso</label>
+                </fieldset>
+                <fieldset name="T2">
+                    <legend>T2</legend>
+                    <label class="radio-inline"><input name="T2" type="radio" value="Hypo">Hypo</label>
+                    <label class="radio-inline"><input name="T2" type="radio" value="Hyper">Hyper</label>
+                    <label class="radio-inline"><input name="T2" type="radio" value="Iso">Iso</label>
+                </fieldset>
+                <fieldset name="Shape">
+                    <legend>Shape</legend>
+                    <label class="radio-inline"><input name="Shape" type="radio" value="Round">Round</label>
+                    <label class="radio-inline"><input name="Shape" type="radio" value="Oval">Oval</label>
+                    <label class="radio-inline"><input name="Shape" type="radio" value="Lobular">Lobular</label>
+                    <label class="radio-inline"><input name="Shape" type="radio" value="Irregular">Irregular</label>
+               </fieldset>
+                <fieldset name="Margin">
+                    <legend>Margin</legend>
+                    <label class="radio-inline"><input name="Margin" type="radio" value="Smooth">Smooth</label>
+                    <label class="radio-inline"><input name="Margin" type="radio" value="Irregular">Irregular</label>
+                    <label class="radio-inline"><input name="Margin" type="radio" value="Spiculated">Spiculated</label>
+                </fieldset>
+                <fieldset name="Enhancement Pattern">
+                    <legend>Enhancement Pattern</legend>
+                    <label class="radio-inline"><input name="EnhPat" type="radio" value="Homogeneous">Homogenous</label>
+                    <label class="radio-inline"><input name="EnhPat" type="radio" value="Heterogeneous">Heterogenous</label>
+                </fieldset>
+                <fieldset name="Rim">
+                    <legend>Rim</legend>
+                    <label class="radio-inline"><input name="Rim" type="radio" value="Dark">Dark internal</label>
+                    <label class="radio-inline"><input name="Rim" type="radio" value="Sept">Septation</label>
+                </fieldset>
+                <fieldset name="Kietics Initial">
+                    <legend>Kinetics Initial</legend>
+                    <label class="radio-inline"><input name="KineticsInitial" type="radio" value="Slow">Slow</label>
+                    <label class="radio-inline"><input name="KineticsInitial" type="radio" value="Medium">Medium</label>
+                    <label class="radio-inline"><input name="KineticsInitial" type="radio" value="Rapid">Rapid</label>
+                    <label class="radio-inline"><input name="KineticsInitial" type="radio" value="Delayed">Delayed</label>
+                </fieldset>
+                <fieldset name="Kietics Delayed">
+                    <legend>Kinetics Delayed</legend>
+                    <label class="radio-inline"><input name="KineticsDelayed" type="radio" value="Persistent">Persistent</label>
+                    <label class="radio-inline"><input name="KineticsDelayed" type="radio" value="Plateau">Plateau</label>
+                    <label class="radio-inline"><input name="KineticsDelayed" type="radio" value="Washout">Washout</label>
+                </fieldset>
+                <fieldset name="Non-mass distribution">
+                    <legend>Non-mass distribution</legend>
+                    <label class="radio-inline"><input name="NonMassDist" type="radio" value="Linear">Linear</label>
+                    <label class="radio-inline"><input name="NonMassDist" type="radio" value="Segmental">Segmental</label>
+                    <label class="radio-inline"><input name="NonMassDist" type="radio" value="Focal area">Focal area</label>
+                    <label class="radio-inline"><input name="NonMassDist" type="radio" value="Regional">Regional</label>
+                    <label class="radio-inline"><input name="NonMassDist" type="radio" value="Multiple regions">Multiple regions</label>
+                    <label class="radio-inline"><input name="NonMassDist" type="radio" value="Diffuse">Diffuse</label>
+                </fieldset>
+                <fieldset name="Internal enhancement pattern">
+                    <legend>Internal enhacement pattern</legend>
+                    <label class="radio-inline"><input name="IntEnhPat" type="radio" value="Homogeneous">Homogeneous</label>
+                    <label class="radio-inline"><input name="IntEnhPat" type="radio" value="Heterogeneous">Heterogenous</label>
+                    <label class="radio-inline"><input name="IntEnhPat" type="radio" value="Clumped">Clumped</label>
+                    <label class="radio-inline"><input name="IntEnhPat" type="radio" value="Ring">Ring</label>
+                </fieldset>
+                <fieldset name="Symmetry">
+                    <legend>Symmetry</legend>
+                    <label class="radio-inline"><input name="Symmetry" type="radio" value="Symmetrical">Symmetrical</label>
+                    <label class="radio-inline"><input name="Symmetry" type="radio" value="Asymmetrical">Asymmetrical</label>
+                </fieldset>
+            </div>
+        </div>
+        </fieldset>
+    <h5>Lesion 2</h5>
+    <h5>Lesion 3</h5>
+        <div class="form-group">
+            <h5>Associated Finding</h5>
+            <div class="col-md-11 pull-right">
+                <fieldset name="Right">
+                    <legend>Right</legend>
+                    <label class="radio-inline"><input name="Right" type="radio" value="NoneApply">None apply</label>
+                    <label class="radio-inline"><input name="Right" type="radio" value="Nipple retraction">Nipple retraction</label>
+                    <label class="radio-inline"><input name="Right" type="radio" value="Nipple inversion">Nipple inversion</label>
+                    <label class="radio-inline"><input name="Right" type="radio" value="PreContrastHigh">Pre-contrast high ductal signa</label>
+                    <label class="radio-inline"><input name="Right" type="radio" value="SkinThickF">Skin thickening (focal)</label>
+                    <label class="radio-inline"><input name="Right" type="radio" value="SkinThickD">Skin thickening (diffuse)</label>
+                    <label class="radio-inline"><input name="Right" type="radio" value="SkinInv">Skin invasion</label>
+                    <label class="radio-inline"><input name="Right" type="radio" value="Edema">Edema</label>
+                    <label class="radio-inline"><input name="Right" type="radio" value="Lymphadenopathy">Lymphadenopathy</label>
+                    <label class="radio-inline"><input name="Right" type="radio" value="PectoralisInv">Pectoralis invasion</label>
+                    <label class="radio-inline"><input name="Right" type="radio" value="ChestWallInv">Chest wall invasion</label>
+                    <label class="radio-inline"><input name="Right" type="radio" value="Hematoma">Hematoma/blood</label>
+                    <label class="radio-inline"><input name="Right" type="radio" value="AbnormalSig">Abnormal signal void</label>
+                    <label class="radio-inline"><input name="Right" type="radio" value="Cysts">Cysts</label>
+                </fieldset>
+                <fieldset name="Left">
+                    <legend>Left</legend>
+                    <label class="radio-inline"><input name="Left" type="radio" value="NoneApply">None apply</label>
+                    <label class="radio-inline"><input name="Left" type="radio" value="Nipple retraction">Nipple retraction</label>
+                    <label class="radio-inline"><input name="Left" type="radio" value="Nipple inversion">Nipple inversion</label>
+                    <label class="radio-inline"><input name="Left" type="radio" value="PreContrastHigh">Pre-contrast high ductal signa</label>
+                    <label class="radio-inline"><input name="Left" type="radio" value="SkinThickF">Skin thickening (focal)</label>
+                    <label class="radio-inline"><input name="Left" type="radio" value="SkinThickD">Skin thickening (diffuse)</label>
+                    <label class="radio-inline"><input name="Left" type="radio" value="SkinInv">Skin invasion</label>
+                    <label class="radio-inline"><input name="Left" type="radio" value="Edema">Edema</label>
+                    <label class="radio-inline"><input name="Left" type="radio" value="Lymphadenopathy">Lymphadenopathy</label>
+                    <label class="radio-inline"><input name="Left" type="radio" value="PectoralisInv">Pectoralis invasion</label>
+                    <label class="radio-inline"><input name="Left" type="radio" value="ChestWallInv">Chest wall invasion</label>
+                    <label class="radio-inline"><input name="Left" type="radio" value="Hematoma">Hematoma/blood</label>
+                    <label class="radio-inline"><input name="Left" type="radio" value="AbnormalSig">Abnormal signal void</label>
+                    <label class="radio-inline"><input name="Left" type="radio" value="Cysts">Cysts</label>
+                </fieldset>
+            </div>
+        </div>
+        <div class="form-group">
+            <h5><strong>BiRads Assessment</strong></h5>
+            <div class="col-md-11 pull-right">
+                <fieldset name="BA">
+                    <label class="radio-inline">Right<input name="BARight" type="radio" value="BA0" title="technical issues/incomplete study">0</label>
+                    <label class="radio-inline"><input name="BARight" type="radio" value="BA1" title="Negative/Normal - routine followup">1</label>
+                    <label class="radio-inline"><input name="BARight" type="radio" value="BA2" title="Benign - routine followup">2</label>
+                    <label class="radio-inline"><input name="BARight" type="radio" value="BA3" title="Probably benign - early review">3</label>
+                    <label class="radio-inline"><input name="BARight" type="radio" value="BA4" title="Suspicious - biopsy">4</label>
+                    <label class="radio-inline"><input name="BARight" type="radio" value="BA5" title="highly suspicious - biopsy and appropriate action">5</label>
+                    <label class="radio-inline"><input name="BARight" type="radio" value="BA6" title="known biopsy - proven cancer">6</label><br />
+                    <label class="radio-inline">Left:<input name="BALeft" type="radio" value="BA0" title="technical issues/incomplete study">0</label>
+                    <label class="radio-inline"><input name="BALeft" type="radio" value="BA1" title="Negative/Normal - routine followup">1</label>
+                    <label class="radio-inline"><input name="BALeft" type="radio" value="BA2" title="Benign - routine followup">2</label>
+                    <label class="radio-inline"><input name="BALeft" type="radio" value="BA3" title="Probably benign - early review">3</label>
+                    <label class="radio-inline"><input name="BALeft" type="radio" value="BA4" title="Suspicious - biopsy">4</label>
+                    <label class="radio-inline"><input name="BALeft" type="radio" value="BA5" title="highly suspicious - biopsy and appropriate action">5</label>
+                    <label class="radio-inline"><input name="BALeft" type="radio" value="BA6" title="known biopsy - proven cancer">6</label>
+                </fieldset>
+            </div>
+        </div>
+
+    <h4><strong>Additional Comments</strong></h4>
+
+    <div class="form-group">
+        <div class="row col-md-12">
+            <div class="col-md-12 pull-right">
+                <textarea class="rpt-text form-control" rows="3" style="resize:none;" placeholder="Comments" name="Impression"></textarea>
+            </div>
+        </div>
+    </div>
+
+<!-- </div> -->
+
+
+</body>
+
+</html>

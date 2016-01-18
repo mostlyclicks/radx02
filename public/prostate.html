@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <title>radX, LLC</title>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+  <meta content="" name="description" />
+  <meta content="" name="author" />
+  
+  <!-- ================== BEGIN BASE CSS STYLE ================== -->
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+  <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+  <!-- <link href="assets/css/animate.min.css" rel="stylesheet" /> -->
+  <!-- <link href="assets/css/style.min.css" rel="stylesheet" /> -->
+    <!-- <link href="assets/css/custom-index-v2.css" rel="stylesheet" /> -->
+    <!-- <link href="assets/css/style-responsive.css" rel="stylesheet" /> -->
+  <!-- <link href="assets/css/style-responsive.min.css" rel="stylesheet" /> -->
+  <!-- <link href="assets/css/theme/default.css" id="theme" rel="stylesheet" /> -->
+  <!-- ================== END BASE CSS STYLE ================== -->
+  
+  <!-- ================== BEGIN BASE JS ================== -->
+  <script src="assets/plugins/pace/pace.min.js"></script>
+  <!-- ================== END BASE JS ================== -->
+
+</head>
+
+<body>
+
+
+
+<style>
+    fieldset {
+        /*border-width: 1px;
+        border-color: black;
+        border-style: solid;*/
+        background-color:#f1f1f1;
+        padding:0px 10px 10px 10px;
+        margin-bottom: 5px;
+        
+    }
+
+/*    h5 {
+        width: auto;
+        padding: 0px;
+        margin: 0px;
+        margin-left: 0px;
+        border: none;
+        font-size: small;
+        border:1px solid red;
+        
+    }*/
+
+    input[type=radio] {
+        margin: 0px;
+    }
+
+    textarea {
+        width: 100%;
+        margin-top: 5px;
+        font-size: small;
+    }
+
+    .form-horizontal .form-group {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .save-image .no-image {
+        border: 0px;
+        width: 100%;
+        height: 1em;
+        font-size: xx-small;
+    }
+
+    .view-ps {
+        height: 15px;
+        margin-left: 15px;
+    }
+
+    .delete-ps {
+        margin-top: 5px;
+    }
+
+    .tab-content {
+        /*border-style:ridge;*/
+        border:1px solid #a3a3a3;
+        margin-top:-1px;
+
+    }
+
+    .tab-content h4 {
+        font-size:110%;
+        border-bottom:1px solid #cdcdcd;
+        margin-top:1.5em;
+        font-weight:900;
+
+    }
+
+    .tab-content h5 {
+        font-size:100%;
+        font-weight: 800;
+    }
+
+    #rptTabs {
+        margin-top:1px;
+    }
+
+    #rptTabs li {
+        margin-top:14px !important;
+        margin-right:4px;
+        /*border-style:r;*/
+        border:1px solid #a3a3a3;
+        border-radius:6px 6px 0 0;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+75,e8e8e8+100 */
+        background: #ffffff; /* Old browsers */
+        background: -moz-linear-gradient(top,  #ffffff 0%, #ffffff 75%, #e8e8e8 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  #ffffff 0%,#ffffff 75%,#e8e8e8 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  #ffffff 0%,#ffffff 75%,#e8e8e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e8e8e8',GradientType=0 ); /* IE6-9 */
+    }
+
+    #rptTabs li.active {
+        /*background: gray;*/
+        border-bottom:1px solid white !important;
+        background:white !important;
+        
+    }
+
+    .nav-tabs {
+        background: white;
+    }
+
+    /*.nav-tabs>li.active>a {
+        border-bottom:1px solid transparent !important;
+    }*/
+
+
+
+</style>
+
+<div style="max-height:inherit; overflow-y:scroll">
+    <h4><strong>FINDINGS</strong></h4>
+
+    <div class="form-group">
+        <h5></h5>
+        <div class="col-md-11 pull-right">
+            <fieldset >
+                <label class="radio-inline">Prostate Size:<input name="MainProstateSize" type="number" />cm</label>
+                <label class="radio-inline">Volume:<input name="MainProstateVolume" type="number" />cc</label>
+            </fieldset>
+        </div>
+    </div>
+
+    <div>
+        <h4>PERIPHERAL ZONE</h4>
+
+        <!-- Nav tabs -->
+        <ul id="rptTabs" class="nav nav-tabs" role="tablist">
+            <li class="active"><a href="#lesion1" role="tab" data-toggle="tab">LESION 1</a></li>
+            <li><a href="#lesion2" role="tab" data-toggle="tab">LESION 2</a></li>
+            <li><a href="#lesion3" role="tab" data-toggle="tab">LESION 3</a></li>
+            <li><a href="#lesion4" role="tab" data-toggle="tab">LESION 4</a></li>
+            <li><a href="#lesion5" role="tab" data-toggle="tab">LESION 5</a></li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div class="tab-pane active" id="lesion1">
+                <div class="form-group">
+                    <div class="col-md-11 pull-right">
+                        <fieldset name="lesion1Size">
+                            <label class="radio-inline">Size:<input name="lesion1Size" type="text">cm</label>
+                        </fieldset>
+                        <fieldset name="lesion1Location1">
+                            <h5>Location 1</h5>
+                            <!-- <h5>Location 1</h5> -->
+                            <label class="radio-inline"><input name="lesion1Location1" type="radio" value="Right">Right</label>
+                            <label class="radio-inline"><input name="lesion1Location1" type="radio" value="Left">Left</label>
+                        </fieldset>
+                        <fieldset name="lesion1Location2">
+                            <h5>Location 2</h5>
+                            <label class="radio-inline"><input name="lesion1Location2" type="radio" value="Base">Base</label>
+                            <label class="radio-inline"><input name="lesion1Location2" type="radio" value="Mid">Mid</label>
+                            <label class="radio-inline"><input name="lesion1Location2" type="radio" value="Apex">Apex</label>
+                        </fieldset>
+                        <fieldset name="lesion1Location3">
+                            <h5>Location 3</h5>
+                            <label class="radio-inline"><input name="lesion1Location3" type="radio" value="Anterior">Anterior</label>
+                            <label class="radio-inline"><input name="lesion1Location3" type="radio" value="Posterior">Posterior</label>
+                        </fieldset>
+                        <label class="radio-inline"><input name="radioImage1" class="save-image" type="radio" value="SaveAnswerImage">Save Answer Image</label>
+                        <label class="radio-inline"><input name="radioImage1" class="no-image" type="radio" value="NoAnswerImage" checked>No Image</label>
+                        <a name="lesion1image" class="view-ps btn btn-xs btn-link" disabled="">View Image</a>
+                        <i class="fa delete-ps fa-2x fa-trash-o pull-right" style="" title="Delete Image"></i>
+
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <h4>T2</h4>
+                    <div class="col-md-11 pull-right">
+                        <fieldset name="Signal">
+                            <h5>Signal</h5>
+                            <label class="radio-inline"><input name="signal" type="radio" value="Uniform">Uniform</label>
+                            <label class="radio-inline"><input name="signal" type="radio" value="HyperIntense">Hyperintense</label>
+                            <label class="radio-inline"><input name="signal" type="radio" value="MildHypoIntense">Mild hypointense</label>
+                            <label class="radio-inline"><input name="signal" type="radio" value="ModerateHypoIntense">Moderate hypointense</label><br />
+                        </fieldset>
+                        <fieldset name="Appearance">
+                            <h5>Appearance</h5>
+                            <label class="radio-inline"><input name="appearance" type="radio" value="Linear">Linear</label>
+                            <label class="radio-inline"><input name="appearance" type="radio" value="WedgeShaped">Wedge shaped</label>
+                            <label class="radio-inline"><input name="appearance" type="radio" value="Rounded">Rounded</label>
+                        </fieldset>
+                        <fieldset name="Margins">
+                            <h5>Margins</h5>
+                            <label class="radio-inline"><input name="margins" type="radio" value="Indistinct">Indistinct</label>
+                            <label class="radio-inline"><input name="margins" type="radio" value="Circumscribed">Circumscribed</label>
+                        </fieldset>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <h4>DWI</h4>
+                    <div class="col-md-11 pull-right">
+                        <fieldset name="adcValue">
+                            <label class="radio-inline">ADC Value:<input name="ADCValue" type="text"></label><br />
+                        </fieldset>
+                        <fieldset name="SignalOnADC">
+                            <h5>Signal on ADC</h5>
+                            <label class="radio-inline"><input name="sigAdc" type="radio" value="Normal">Normal</label>
+                            <label class="radio-inline"><input name="sigAdc" type="radio" value="modeHypointense">Mild to moderately hypointense</label>
+                            <label class="radio-inline"><input name="sigAdc" type="radio" value="markedHperintense">Markedly hypointense</label>
+                        </fieldset>
+                        <fieldset name="SignalOnHighBValue">
+                            <h5>Signal on high b value</h5>
+                            <label class="radio-inline"><input name="sigBval" type="radio" value="iso">Isointense/mildly hyperintense</label><br />
+                            <label class="radio-inline"><input name="sigBval" type="radio" value="marked">Markedly hyperintense</label>
+                        </fieldset>
+                        <fieldset name="adcAppearance">
+                            <h5>Appearance</h5>
+                            <label class="radio-inline"><input name="adcApp" type="radio" value="Focal">Focal</label>
+                            <label class="radio-inline"><input name="adcApp" type="radio" value="Indistinct">Indistinct</label>
+                        </fieldset>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <h4>DCE</h4>
+                    <div class="col-md-11 pull-right">
+                        <fieldset name="DCE">
+                            <h5>Enhancement corresponding to T2/DWI abnormality</h5>
+                            <label class="radio-inline"><input name="DCE" type="radio" value="yes">Yes</label>
+                            <label class="radio-inline"><input name="DCE" type="radio" value="no">No</label>
+                        </fieldset>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <h4>T1</h4>
+                    <div class="col-md-11 pull-right">
+                        <fieldset name="T1">
+                            <label class="radio-inline"><input name="T1" type="radio" value="Hypointense">Hypointense</label>
+                            <label class="radio-inline"><input name="T1" type="radio" value="Isointense">Isointense/hyperintense</label>
+                        </fieldset>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <h4>PIRADS</h4>
+                    <div class="col-md-11 pull-right">
+                        <fieldset name="PIRADS">
+                            <label class="radio-inline"><input name="PIRADS" type="radio" value="HighlUnlikely" title="clinically significant cancer is highly unlikely to be present">1</label>
+                            <label class="radio-inline"><input name="PIRADS" type="radio" value="Unlikely" title="clinically significant cancer is unlikely to be present">2</label>
+                            <label class="radio-inline"><input name="PIRADS" type="radio" value="Equivocal" title="the presence of clinically significant cancer is equivocal">3</label>
+                            <label class="radio-inline"><input name="PIRADS" type="radio" value="Likely" title="the presence of clinically significant cancer is equivocal">4</label>
+                            <label class="radio-inline"><input name="PIRADS" type="radio" value="HighlyLikely" title="clinically significant cancer is highly likely to be present">5</label>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane" id="lesion2">LESION 2</div>
+            <div class="tab-pane" id="lesion3">LESION 3</div>
+            <div class="tab-pane" id="lesion4">LESION 4</div>
+            <div class="tab-pane" id="lesion5">LESION 5</div>
+        </div>
+
+    </div>
+
+
+
+    <h4>TRANSITION ZONE</h4>
+    <div class="form-group">
+        <h5>BPH</h5>
+        <div class="col-md-11 pull-right">
+            <fieldset name="BPH">
+                <label class="radio-inline"><input name="bph" type="radio" value="None">No suspicious lesion</label>
+                <label class="radio-inline"><input name="expe" type="radio" value="both">Both</label>
+            </fieldset>
+        </div>
+    </div>
+    <div class="col-md-11 pull-right">
+        <fieldset name="Lesion">
+            <label class="radio-inline">Lesion number:<input name="LesionSize" type="text">cm (measured on TW2)</label>
+            <label class="radio-inline">Size:<input name="LesionSize" type="text">cm</label>
+        </fieldset>
+        <fieldset name="Location1">
+            <h5>Location 1</h5>
+            <label class="radio-inline"><input name="Loc1" type="radio" value="Right">Right</label>
+            <label class="radio-inline"><input name="Loc1" type="radio" value="Left">Left</label>
+        </fieldset>
+        <fieldset name="Location2">
+            <h5>Location 2</h5>
+            <label class="radio-inline"><input name="Loc2" type="radio" value="Base">Base</label>
+            <label class="radio-inline"><input name="Loc2" type="radio" value="Mid">Mid</label>
+            <label class="radio-inline"><input name="Loc2" type="radio" value="Apex">Apex</label>
+        </fieldset>
+        <fieldset name="Location 3">
+            <h5>Location 3</h5>
+            <label class="radio-inline"><input name="Loc3" type="radio" value="Anterior">Anterior</label>
+            <label class="radio-inline"><input name="Loc3" type="radio" value="Posterior">Posterior</label>
+        </fieldset>
+    </div>
+    <label class="radio-inline"><input name="radioImage8" class="save-image" type="radio" value="SaveAnswerImage">Save Answer Image</label>
+    <label class="radio-inline"><input name="radioImage8" class="no-image" type="radio" value="NoAnswerImage" checked>No Image</label>
+    <a name="Lesion1" class="view-ps btn btn-xs btn-link" disabled="">View Image</a>
+    <i class="fa delete-ps fa-2x fa-trash-o pull-right" style="" title="Delete Image"></i>
+
+    <div class="form-group">
+        <h5>T2 TZ</h5>
+        <div class="col-md-11 pull-right">
+            <fieldset name="signal">
+                <h5>Signal</h5>
+                <label class="radio-inline"><input name="T2TZSig" type="radio" value="Bright">Bright</label>
+                <label class="radio-inline"><input name="T2TZSig" type="radio" value="Isointense">Isointense</label>
+                <label class="radio-inline"><input name="T2TZSig" type="radio" value="Modhyp">Moderately Hypointense</label>
+            </fieldset>
+            <fieldset name="appearance">
+                <h5>Appearance</h5>
+                <label class="radio-inline"><input name="T2TZapp" type="radio" value="Heterogeneous" >Heterogeneous</label>
+                <label class="radio-inline"><input name="T2TZapp" type="radio" value="Homogeneous">Homogeneous</label>
+                <label class="radio-inline"><input name="T2TZapp" type="radio" value="Circumscribed">Circumscribed</label>
+                <label class="radio-inline"><input name="T2TZapp" type="radio" value="NonCircum">Non-circumscribed</label>
+                <label class="radio-inline"><input name="T2TZapp" type="radio" value="Encapsulated">Encapsulated</label>
+                <label class="radio-inline"><input name="T2TZapp" type="radio" value="NonEncap">Non-encapsulated</label>
+            </fieldset>
+            <fieldset name="shape">
+                <h5>Shape</h5>
+                <label class="radio-inline"><input name="T2TZshape" type="radio" value="Round">Round</label>
+                <label class="radio-inline"><input name="T2TZshape" type="radio" value="Oval">Oval</label>
+                <label class="radio-inline"><input name="T2TZshape" type="radio" value="Lenticular">Lenticular</label>
+                <label class="radio-inline"><input name="T2TZshape" type="radio" value="Irregular">Irregular</label>
+                <label class="radio-inline"><input name="T2TZshape" type="radio" value="Other">Other</label>
+            </fieldset>
+        </div>
+    </div>
+    <div class="form-group">
+        <h5>DWI</h5>
+        <div class="col-md-11 pull-right">
+            <fieldset name="adcValue">
+                <label class="radio-inline">ADC Value:<input name="ADCValue" type="text"></label><br />
+            </fieldset>
+            <fieldset name="SignalOnADC">
+                <h5>Signal on ADC</h5>
+                <label class="radio-inline"><input name="TZsigAdc" type="radio" value="Normal">Normal</label>
+                <label class="radio-inline"><input name="TZsigAdc" type="radio" value="modeHypointense">Mild to moderately hypointense</label>
+                <label class="radio-inline"><input name="TZsigAdc" type="radio" value="markedHperintense">Markedly hypointense</label>
+            </fieldset>
+            <fieldset name="SignalOnHighBValue">
+                <h5>Signal on high b value</h5>
+                <label class="radio-inline"><input name="TZsigBval" type="radio" value="iso">Isointense/mildly hyperintense</label><br />
+                <label class="radio-inline"><input name="TZsigBval" type="radio" value="marked">Markedly hyperintense</label>
+            </fieldset>
+            <fieldset name="adcAppearance">
+                <h5>Appearance</h5>
+                <label class="radio-inline"><input name="TZadcApp" type="radio" value="Focal">Focal</label>
+                <label class="radio-inline"><input name="TZadcApp" type="radio" value="Indistinct">Indistinct</label>
+            </fieldset>
+        </div>
+    </div>
+    <div class="form-group">
+        <h5>DCE</h5>
+        <div class="col-md-11 pull-right">
+            <fieldset name="DCE">
+                <h5>Enhancement corresponding to T2/DWI abnormality</h5>
+                <label class="radio-inline"><input name="TZDCE" type="radio" value="yes">Yes</label>
+                <label class="radio-inline"><input name="TZDCE" type="radio" value="no">No</label>
+            </fieldset>
+            <fieldset name="DCE">
+                <h5>Is there ECE associated with this lesion?</h5>
+                <label class="radio-inline"><input name="TZECE" type="radio" value="yes">Yes</label>
+                <label class="radio-inline"><input name="TZECE" type="radio" value="no">No</label>
+            </fieldset>
+        </div>
+    </div>
+    <div class="form-group">
+        <h5>PIRADS</h5>
+        <div class="col-md-11 pull-right">
+            <fieldset name="PIRADS">
+                <label class="radio-inline"><input name="TZPIRADS" type="radio" value="HighlUnlikely" title="clinically significant cancer is highly unlikely to be present">1</label>
+                <label class="radio-inline"><input name="TZPIRADS" type="radio" value="Unlikely" title="clinically significant cancer is unlikely to be present">2</label>
+                <label class="radio-inline"><input name="TZPIRADS" type="radio" value="Equivocal" title="the presence of clinically significant cancer is equivocal">3</label>
+                <label class="radio-inline"><input name="TZPIRADS" type="radio" value="Likely" title="the presence of clinically significant cancer is equivocal">4</label>
+                <label class="radio-inline"><input name="TZPIRADS" type="radio" value="HighlyLikely" title="clinically significant cancer is highly likely to be present">5</label>
+            </fieldset>
+        </div>
+    </div>
+    <h5>Lesion 2</h5>
+    <h5>Lesion 3</h5>
+    <h5>Lesion 4</h5>
+    <h5>Lesion 5</h5>
+    <h4>
+        CENTRAL ZONE
+    </h4>
+    <div class="form-group">
+        <div class="col-md-11 pull-right">
+            <textarea name="CentralZone-text" rows="2" placeholder="Description"></textarea>
+            <label class="radio-inline"><input name="radioImage2" class="save-image" type="radio" value="SaveAnswerImage">Save Answer Image</label>
+            <label class="radio-inline"><input name="radioImage2" class="no-image" type="radio" value="NoAnswerImage" checked>No Image</label>
+            <a name="centralZone" class="view-ps btn btn-xs btn-link" disabled="">View Image</a>
+            <i class="fa delete-ps fa-2x fa-trash-o pull-right" style="" title="Delete Image"></i>
+        </div>
+    </div>
+
+    <h4>
+        Anterior Fibromuscular Stroma
+    </h4>
+    <div class="form-group">
+        <div class="col-md-11 pull-right">
+            <textarea name="AFS-text" rows="2" placeholder="Description"></textarea>
+            <label class="radio-inline"><input name="radioImage3" class="save-image" type="radio" value="SaveAnswerImage">Save Answer Image</label>
+            <label class="radio-inline"><input name="radioImage3" class="no-image" type="radio" value="NoAnswerImage" checked>No Image</label>
+            <a name="AFS" class="view-ps btn btn-xs btn-link" disabled="">View Image</a>
+            <i class="fa delete-ps fa-2x fa-trash-o pull-right" style="" title="Delete Image"></i>
+        </div>
+    </div>
+    <div class="form-group">
+        <h5>Extraprostatic extension</h5>
+        <div class="col-md-11 pull-right">
+            <fieldset name="Extraprostatic extension">
+                <label class="radio-inline"><input name="EPE" type="radio" value="None">None</label>
+                <label class="radio-inline"><input name="EPE" type="radio" value="Exists">(+) Extraprostatic Extension</label>
+            </fieldset>
+            <textarea name="Extraprostatic extension-text" rows="2" placeholder="Description"></textarea>
+            <label class="radio-inline"><input name="radioImage4" class="save-image" type="radio" value="SaveAnswerImage">Save Answer Image</label>
+            <label class="radio-inline"><input name="radioImage4" class="no-image" type="radio" value="NoAnswerImage" checked>No Image</label>
+            <a name="Extraprostatic extension" class="view-ps btn btn-xs btn-link" disabled="">View Image</a>
+            <i class="fa delete-ps fa-2x fa-trash-o pull-right" style="" title="Delete Image"></i>
+        </div>
+    </div>
+    <div class="form-group">
+        <h5>External urethral sphincter</h5>
+        <div class="col-md-11 pull-right">
+            <fieldset name="External urethral sphincter">
+                <label class="radio-inline"><input name="External urethral sphincter" type="radio" value="Normal">Unremarkable</label>
+                <label class="radio-inline"><input name="External urethral sphincter" type="radio" value="Invaded">Invaded</label>
+                <label class="radio-inline"><input name="External urethral sphincter" type="radio" value="Displaced">Displaced</label>
+            </fieldset>
+        </div>
+    </div>
+
+   <div class="form-group">
+        <h5>Seminal vesicles</h5>
+        <div class="col-md-11 pull-right">
+            <fieldset name="Seminal Vesicles">
+                <label class="radio-inline"><input name="Seminal vesicles" type="radio" value="Unremarkable">Unremarkable</label>
+                <label class="radio-inline"><input name="Seminal vesicles" type="radio" value="Involvement">(+) Involvement</label>
+            </fieldset>
+            <textarea name="Seminal vesicles-text" rows="2" placeholder="Description"></textarea>
+            <label class="radio-inline"><input name="radioImage5" class="save-image" type="radio" value="SaveAnswerImage">Save Answer Image</label>
+            <label class="radio-inline"><input name="radioImage5" class="no-image" type="radio" value="NoAnswerImage" checked>No Image</label>
+            <a name="Seminal vesicles" class="view-ps btn btn-xs btn-link" disabled="">View Image</a>
+            <i class="fa delete-ps fa-2x fa-trash-o pull-right" style="" title="Delete Image"></i>
+        </div>
+    </div>
+    <div class="form-group">
+        <h5>Neurovascular bundles</h5>
+        <div class="col-md-11 pull-right">
+            <fieldset name="Neurovascular bundles">
+                <label class="radio-inline"><input name="NVB" type="radio" value="Unremarkable">Unremarkable</label>
+                <label class="radio-inline"><input name="NVB" type="radio" value="Involved">(+)Involved</label>
+            </fieldset>
+            <textarea name="NVB-text" rows="2" placeholder="Describe neurovascular bundle involvement"></textarea>
+            <label class="radio-inline"><input name="radioImage6" class="save-image" type="radio" value="SaveAnswerImage">Save Answer Image</label>
+            <label class="radio-inline"><input name="radioImage6" class="no-image" type="radio" value="NoAnswerImage" checked>No Image</label>
+            <a name="NVB" class="view-ps btn btn-xs btn-link" disabled="">View Image</a>
+            <i class="fa delete-ps fa-2x fa-trash-o pull-right" style="" title="Delete Image"></i>
+        </div>
+    </div>
+    <div class="form-group">
+        <h5>Lymphadenopathy</h5>
+        <div class="col-md-11 pull-right">
+            <fieldset name="Lymphadenopathy">
+                <label class="radio-inline"><input name="Lymphadenopathy" type="radio" value="Absent">Absent</label>
+                <label class="radio-inline"><input name="Lymphadenopathy" type="radio" value="Present">Present</label>
+            </fieldset>
+            <textarea name="Lymphadenopathy" rows="2" placeholder="Description"></textarea>
+            <label class="radio-inline"><input name="radioImage7" class="save-image" type="radio" value="SaveAnswerImage">Save Answer Image</label>
+            <label class="radio-inline"><input name="radioImage7" class="no-image" type="radio" value="NoAnswerImage" checked>No Image</label>
+            <a name="Lymphadenopathy" class="view-ps btn btn-xs btn-link" disabled="">View Image</a>
+            <i class="fa delete-ps fa-2x fa-trash-o pull-right" style="" title="Delete Image"></i>
+        </div>
+    </div>
+    <h4><strong>IMPRESSION</strong></h4>
+    <div class="form-group">
+        <div class="col-md-11 pull-right">
+            <fieldset name="Lesion1">
+                <h5>Lesion 1</h5>
+                <label class="radio-inline">Size:<input name="Lesion1ProstateSize" type="text" />cm</label>
+                <label class="radio-inline">Location:<input name="ProstateVolume" type="text" /></label><br/><br/>
+                <label class="radio-inline">PIRADS: <input name="L2IPIRADS" type="radio" value="HighlUnlikely" title="clinically significant cancer is highly unlikely to be present">1</label>
+                <label class="radio-inline"><input name="L2IPIRADS" type="radio" value="Unlikely" title="clinically significant cancer is unlikely to be present">2</label>
+                <label class="radio-inline"><input name="L2IPIRADS" type="radio" value="Equivocal" title="the presence of clinically significant cancer is equivocal">3</label>
+                <label class="radio-inline"><input name="L2IPIRADS" type="radio" value="Likely" title="the presence of clinically significant cancer is equivocal">4</label>
+                <label class="radio-inline"><input name="L2IPIRADS" type="radio" value="HighlyLikely" title="clinically significant cancer is highly likely to be present">5</label>
+            </fieldset>
+            <fieldset name="Lesion2">
+                <h5>Lesion 2</h5>
+                <label class="radio-inline">Size:<input name="Lesion2ProstateSize" type="text" />cm</label>
+                <label class="radio-inline">Location:<input name="ProstateVolume" type="text" /></label><br/><br/>
+                <label class="radio-inline">PIRADS: <input name="L2IPIRADS" type="radio" value="HighlUnlikely" title="clinically significant cancer is highly unlikely to be present">1</label>
+                <label class="radio-inline"><input name="L2IPIRADS" type="radio" value="Unlikely" title="clinically significant cancer is unlikely to be present">2</label>
+                <label class="radio-inline"><input name="L2IPIRADS" type="radio" value="Equivocal" title="the presence of clinically significant cancer is equivocal">3</label>
+                <label class="radio-inline"><input name="L2IPIRADS" type="radio" value="Likely" title="the presence of clinically significant cancer is equivocal">4</label>
+                <label class="radio-inline"><input name="L2IPIRADS" type="radio" value="HighlyLikely" title="clinically significant cancer is highly likely to be present">5</label>
+            </fieldset>
+            <fieldset name="Lesion3">
+                <h5>Lesion 3</h5>
+                <label class="radio-inline">Size:<input name="Lesion3ProstateSize" type="text" />cm</label>
+                <label class="radio-inline">Location:<input name="ProstateVolume" type="text" /></label><br /><br/>
+                <label class="radio-inline">PIRADS: <input name="L3IPIRADS" type="radio" value="HighlUnlikely" title="clinically significant cancer is highly unlikely to be present">1</label>
+                <label class="radio-inline"><input name="L3IPIRADS" type="radio" value="Unlikely" title="clinically significant cancer is unlikely to be present">2</label>
+                <label class="radio-inline"><input name="L3IPIRADS" type="radio" value="Equivocal" title="the presence of clinically significant cancer is equivocal">3</label>
+                <label class="radio-inline"><input name="L3IPIRADS" type="radio" value="Likely" title="the presence of clinically significant cancer is equivocal">4</label>
+                <label class="radio-inline"><input name="L3IPIRADS" type="radio" value="HighlyLikely" title="clinically significant cancer is highly likely to be present">5</label>
+            </fieldset>
+            <fieldset name="Lesion4">
+                <h5>Lesion 4</h5>
+                <label class="radio-inline">Size:<input name="Lesion4ProstateSize" type="text" />cm</label>
+                <label class="radio-inline">Location:<input name="ProstateVolume" type="text" /></label><br /><br />
+                <label class="radio-inline">PIRADS: <input name="L4IPIRADS" type="radio" value="HighlUnlikely" title="clinically significant cancer is highly unlikely to be present">1</label>
+                <label class="radio-inline"><input name="L4IPIRADS" type="radio" value="Unlikely" title="clinically significant cancer is unlikely to be present">2</label>
+                <label class="radio-inline"><input name="L4IPIRADS" type="radio" value="Equivocal" title="the presence of clinically significant cancer is equivocal">3</label>
+                <label class="radio-inline"><input name="L4IPIRADS" type="radio" value="Likely" title="the presence of clinically significant cancer is equivocal">4</label>
+                <label class="radio-inline"><input name="L4IPIRADS" type="radio" value="HighlyLikely" title="clinically significant cancer is highly likely to be present">5</label>
+            </fieldset>            
+            <fieldset name="Lesion5">
+                <h5>Lesion 5</h5>
+                <label class="radio-inline">Size:<input name="Lesion5ProstateSize" type="text" />cm</label>
+                <label class="radio-inline">Location:<input name="ProstateVolume" type="text" /></label><br/><br/>               
+                <label class="radio-inline">PIRADS: <input name="L5IPIRADS" type="radio" value="HighlUnlikely" title="clinically significant cancer is highly unlikely to be present">1</label>
+                <label class="radio-inline"><input name="L5IPIRADS" type="radio" value="Unlikely" title="clinically significant cancer is unlikely to be present">2</label>
+                <label class="radio-inline"><input name="L5IPIRADS" type="radio" value="Equivocal" title="the presence of clinically significant cancer is equivocal">3</label>
+                <label class="radio-inline"><input name="L5IPIRADS" type="radio" value="Likely" title="the presence of clinically significant cancer is equivocal">4</label>
+                <label class="radio-inline"><input name="L5IPIRADS" type="radio" value="HighlyLikely" title="clinically significant cancer is highly likely to be present">5</label>
+            </fieldset> 
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <div class="row col-md-12">
+            <div class="col-md-12 pull-right">
+                <textarea class="rpt-text form-control" rows="3" style="resize:none;" placeholder="Impression" name="Impression"></textarea>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+
+</html>
+
+
+
