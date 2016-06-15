@@ -13,7 +13,7 @@ Website: http://www.seantheme.com/color-admin-v1.8/frontend/
         
     }
     .home-content {
-        margin-top:-152px;}
+        margin-top:-100px;}
     #home {
         background-size: 120%;
         background-position-x:80%;
@@ -30,7 +30,7 @@ Website: http://www.seantheme.com/color-admin-v1.8/frontend/
     /*body {border:5px solid purple !important;}*/
     #courses {height:250px !important;}
     #home {height:80vh;}
-    .home-content {margin-top:-300px;}
+    .home-content {margin-top:-100px;}
     #courses img {margin-top:10px;}
 
     .content.has-bg .content-bg img {
@@ -66,7 +66,7 @@ Website: http://www.seantheme.com/color-admin-v1.8/frontend/
     .home-content p {
         margin-bottom: 30px;
     }
-    .home-content {margin-top: -280px;}
+    .home-content {margin-top: -100px;}
 }
 @media (max-width: 992px) { 
     /*body {border:5px solid green;}*/
